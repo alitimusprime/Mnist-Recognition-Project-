@@ -14,7 +14,7 @@ X = X.reshape(-1, 28, 28, 1)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Load the trained model
-model = tf.keras.models.load_model("E:\Ali work\mnist\mnist_model.keras")
+model = tf.keras.models.load_model("mnist_model.keras")
 
 # Predict
 predictions = model.predict(X_test)
